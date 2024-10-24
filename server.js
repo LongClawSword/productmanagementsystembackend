@@ -15,11 +15,10 @@ app.use(express.json());
 
 // PostgreSQL connection pool
 const pool = new Pool({
-  user: 'aryansingh',     // Replace with your PostgreSQL username
-  host: 'localhost',
-  database: 'productdb',      // Replace with your database name
-  password: 'your-password',   // Replace with your PostgreSQL password
-  port: 5432,
+  connectionString: 'postgresql://productdb_cz0v_user:519SD38kaSCYsmVWBEKgiojtQIXuPTpu@dpg-csd8ttu8ii6s73fc9g5g-a/productdb_cz0v',
+  ssl: {
+    rejectUnauthorized: false // Required if the cloud-hosted PostgreSQL instance enforces SSL
+  }
 });
 
 // Get all products
