@@ -8,7 +8,7 @@ const PORT = 5001;
 
 // Middleware
 app.use(cors({
-  origin: 'https://productmanagementsystemfrontend-omhxmw5da.vercel.app', // Replace with your actual frontend URL
+  origin: 'https://productmanagementsystemfrontend-lspt8alv8.vercel.app/', // Replace with your actual frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
 }));
 app.use(express.json());
