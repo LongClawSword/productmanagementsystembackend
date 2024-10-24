@@ -15,7 +15,7 @@ app.use(express.json());
 
 // PostgreSQL connection pool
 const pool = new Pool({
-  connectionString: 'postgresql://productdb_cz0v_user:519SD38kaSCYsmVWBEKgiojtQIXuPTpu@dpg-csd8ttu8ii6s73fc9g5g-a/productdb_cz0v',
+  connectionString: 'postgresql://productdb_cz0v_user:519SD38kaSCYsmVWBEKgiojtQIXuPTpu@dpg-csd8ttu8ii6s73fc9g5g-a.oregon-postgres.render.com/productdb_cz0v',
   ssl: {
     rejectUnauthorized: false // Required if the cloud-hosted PostgreSQL instance enforces SSL
   }
