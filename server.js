@@ -7,10 +7,7 @@ const app = express();
 const PORT = 5001;
 
 // Middleware
-app.use(cors({
-  origin: 'https://productmanagementsystemfrontend-lspt8alv8.vercel.app/', // Replace with your actual frontend URL
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-}));
+app.use(cors());
 app.use(express.json());
 
 // PostgreSQL connection pool
